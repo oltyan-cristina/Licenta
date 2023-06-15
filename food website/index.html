@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <!--CSS style link-->
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header>
+    <div class="logo">
+        <img src="images/lo.jpg">
+    </div>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    
+    <nav class="navbar">
+        <a href="#home">Acasă</a>
+        <a href="#about">Despre noi</a>
+        <a href="#menu">Meniu</a>
+        <a href="#gallery">Propuneri</a>
+        <a href="#review">Recenzii</a>
+        <a href="#team">Echipă</a>
+    </nav>
+    <div class="searchBar">
+        <input placeholder="Search" id="find" name="searchBar" type="text" onkeyup="search()">
+        <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+     </div>
+     <!-- cart icon-->
+     <i class='bx bx-shopping-bag' id="cart-icon"></i>
+     <!--cart-->
+     <div class="cart">
+         <h2 class="cart-title">Comanda ta</h2>
+
+         <!--content-->
+         <div class="cart-content">
+             
+         </div>
+
+         <!--total-->
+         <div class="total">
+             <div class="total-title">Total</div>
+             <div class="total-price">0 lei</div>
+         </div>
+         <!--buy button-->
+         <button type="button" class="btn-buy" ><a href="Order_page.html">Comandă acum</a></button>
+         <!--cart close-->
+         <i class='bx bx-x' id="cart-close"></i>
+     </div>
+</header>
+
+
+
+<!-- home section starts  -->
+
+<div class="home-container">
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Obține o mâncare sănătoasă într-un mod ușor.</h3>
+            <p>Nu poți să mănânci mâncare bună și atât. Trebuie să și vorbești despre ea. Și trebuie să vorbești 
+                despre ea cu cineva care înțelege mâncarea bună și tot ce înseamnă ea.</p>
+            
+        </div>
+    
+        <div class="image">
+            <img src="images/home-img.png" alt="">
+        </div>
+    
+    </section>
+
+</div>
+
+
+
+<!--About section starts-->
+<section class="about" id="about">
+        
+        
+    <div class="row">
+
+        <div class="image">
+            <img src="images/photo2.jpg">
+        </div>
+
+        <div class="content">
+            <h1 ><span>Despre </span>noi</h1>
+            <h3 >Dece să ne alegi?</h3>
+            <br><br><br><br>
+            <p>
+                Cred că această întrebare stă în mintea multor oameni care ne vizitează site-ul sau
+                au auzit de noi. Răspunsul este unul destul de simplu. Vrem să încurajăm oamenii
+                să înceapă un stil de viață cât mai sănătos. Într-o lume în care aproximativ nimic nu mai este bio de la soiurile de plante care se creează în laborator si cresute cu pesticide
+                pănă la carnea care este comercializată în câteva săptămâni de la naștere animalului. 
+                Măncarea noastră este una în care alimentele de bază sunt produse în ferma și grădinile noastre.
+                Probabil că următoarea întrebare va fi "De unde știm noi că sunt produse naturale? ". Ei bine
+                acest lucru se poate verifica chiar de voi, vizitând locul nostru unde se întâmplă toată magia.
+            </p>
+
+
+        </div>
+
+    </div>
+</section>
+
+<!--Menu section starts-->
+
+<section class="shop container" id="menu">
+    <h1><span>Meniu</span></h1>
+    <!--content-->
+    <div class="shop-content">
+        <!--box 1-->
+         <div class="product-box">
+            <img src="images/photo1.jpg" alt="" class="product-img">
+            <h2 class="product-title">Orez cu pui și conopidă</h2>
+            <span class="product-price">25 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 2-->
+         <div class="product-box">
+            <img src="images/photo2.jpg" alt="" class="product-img">
+            <h2 class="product-title">Salată de avocado cu somon</h2>
+            <span class="product-price">30 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 3-->
+         <div class="product-box">
+            <img src="images/photo3.jpg" alt="" class="product-img">
+            <h2 class="product-title">Bol de teiței cu susan</h2>
+            <span class="product-price">30 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 4-->
+         <div class="product-box">
+            <img src="images/photo4.jpg" alt="" class="product-img">
+            <h2 class="product-title">Somon prăjit cu salată de kale cesar</h2>
+            <span class="product-price">35 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 5-->
+         <div class="product-box">
+            <img src="images/photo5.jpg" alt="" class="product-img">
+            <h2 class="product-title">Mic de jun vegan</h2>
+            <span class="product-price">35 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 6-->
+         <div class="product-box">
+            <img src="images/photo6.jpg" alt="" class="product-img">
+            <h2 class="product-title">Paste cu roșii cherry și salată kale</h2>
+            <span class="product-price">20 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 7-->
+         <div class="product-box">
+            <img src="images/photo7.jpg" alt="" class="product-img">
+            <h2 class="product-title">Limonadă de pepene roșu</h2>
+            <span class="product-price">15 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 8-->
+         <div class="product-box">
+            <img src="images/photo8.jpg" alt="" class="product-img">
+            <h2 class="product-title">Smoothie de kiwi</h2>
+            <span class="product-price">20 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 9-->
+         <div class="product-box">
+            <img src="images/photo9.jpg" alt="" class="product-img">
+            <h2 class="product-title">Smoothie de căpșuni</h2>
+            <span class="product-price">20 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 10-->
+         <div class="product-box">
+            <img src="images/photo10.jpg" alt="" class="product-img">
+            <h2 class="product-title">Smoothie de mango</h2>
+            <span class="product-price">25 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 11-->
+         <div class="product-box">
+            <img src="images/photo11_copy.jpg" alt="" class="product-img">
+            <h2 class="product-title">Briosă cu mere și scorțișoară</h2>
+            <span class="product-price">5 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+         <!--box 12-->
+         <div class="product-box">
+            <img src="images/photo12.jpg" alt="" class="product-img">
+            <h2 class="product-title">Prăjitură cu fulgi de ovăz și banane</h2>
+            <span class="product-price">10 lei</span>
+            <i class='bx bx-shopping-bag add-cart'></i>
+         </div>
+    </div>
+ </section>
+
+<!-- steps section starts  -->
+
+<section class="step-container">
+
+    <h1 class="heading">Cum <span>funcționează?</span></h1>
+
+    <div class="steps">
+
+        <div class="box">
+            <img src="images/step-1.jpg" alt="">
+            <h3>
+                Alege preparatul favorit
+            </h3>
+        </div>
+        <div class="box">
+            <img src="images/step-2.jpg" alt="">
+            <h3>Livrare gratis și rapidă</h3>
+        </div>
+        <div class="box">
+            <img src="images/step-4.jpg" alt="">
+            <h3>Savurează deliciile noastre</h3>
+        </div>
+    
+    </div>
+
+</section>
+
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+    <h1 class="heading"> Propuneri de la  <span> clienți </span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/g-1.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading">  <span>Recenzii</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/pic1.png" alt="">
+            <h3>Popescu Anamaria</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Am început să comand preparate de aici în urmă cu aproximativ jumate de an, nu doar pentru calitatea alimenetelor
+                dar și pentru gustul mâncării care este unul deosebit.Timpul de preparare este unul foarte bun, iar ceea ce îmi place este 
+                faptul că mâncarea vine în stare perfectă de aici deduc și grija cu care ele sunt transportate.
+            </p>
+        </div>
+        <div class="box">
+            <img src="images/pic2.png" alt="">
+            <h3>Țuțca Sebastian</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Pentru a mă convinge într-adevăr de calitatea preparatelor așa cum se spune și în site am vizitat localul unde se prepară
+                mâncarea. Am avut ocazia sa vizitez inclusiv locurile unde sunt plantate legumele și fructele și pot spune că întradevăr
+                acestea sunt bio. Se vede pe culoarea acestor și inclusiv pe mirosul fructelor.
+            </p>
+        </div>
+        <div class="box">
+            <img src="images/pic3.png" alt="">
+            <h3>Costea Denisa</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Mâncarea este foarte bună și se vede că este preparată din ingrediente bio.
+                Gustul este unul divin și deosebit.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--Team section starts-->
+
+<div class="team" id="team">
+    <h1><span>Echipa</span>noastră</h1>
+    <h1>Chef Bucătar</h1>
+
+    <div class="team_box">
+        
+        
+
+        <div class="profile">
+            <img src="images/dumitrescu.jpg">
+
+            <div class="info">
+                <h2 class="name">Chef Florin Dumitrescu</h2>
+
+                <div class="team_icon">
+                    <a href="https://www.facebook.com/chefflorindumitrescu">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    
+                    <a href="https://www.instagram.com/chefflorindumitrescu/">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+
+    
+
+    </div>
+
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--Footer section-->
+<footer>
+    <div class="box-container-footer">
+    
+            <div class="box">
+                <h2>Locație</h2>
+                <p>Timișoara</p>
+                <p>Cluj</p>
+                <p>Bucurști</p>
+                <p>Craiova</p>
+                <p>Arad</p>
+            </div>
+    
+            <div class="box">
+                <h2>Contact</h2>
+                <p>+40 754 463 154</p>
+                <p>+94 25 5568456</p>
+                <p>oltyan.cristina@yahoo.com</p>
+                <p>oltyan.cristina07@gmail.com</p>
+            </div>
+    
+            <div class="box">
+                <h2>Serviciile noastre</h2>
+                <p>Livrare rapidă</p>
+                <p>Plați ușoare</p>
+                <p>Servicii 24x7</p>
+            </div>
+    
+        </div>
+    
+    </footer>
+
+<!-- scroll top button  -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+
+<!-- loader  -->
+<div class="loader-container">
+    <img src="images/loader.gif" alt="">
+</div>
+
+
+<script type="text/javascript">
+    function search(){
+        let filter = document.getElementById('find').value.toUpperCase();
+        let item = document.querySelectorAll('.product-box');
+        let l = document.getElementsByTagName('h2');
+        for(var i = 0;i<=l.length;i++){
+        let a=item[i].getElementsByTagName('h2')[0];
+        let value=a.innerHTML || a.innerText || a.textContent;
+        if(value.toUpperCase().indexOf(filter) > -1) {
+        item[i].style.display="";
+            }
+        else
+            {
+                item[i].style.display="none";
+            }
+        }
+    }
+</script>
+
+<script src="js/main.js"></script>
+
+
+</body>
+</html>

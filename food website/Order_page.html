@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Responsive Registration Form</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="Order_page_css.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">Comanda ta</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Nume </label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Nume "/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Prenume</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Prenume"/>
+                </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder=" Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Număr de telefon</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Număr de telefon"/>
+          </div>
+          <div class="user-input-box">
+            <label for="adress">Adresă</label>
+            <input type="text"
+                    id="adress"
+                    name="adress"
+                    placeholder="Adresă"/>
+          </div>
+          
+        </div>
+       
+        <div class="form-submit-btn">
+          <input type="submit" value="Trimite" id="btn">
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+
+    var btn= document.getElementById('btn');
+    btn.addEventListener('click', function (e){
+        e.preventDefault()
+        var nume = document.getElementById('fullName').value;
+        var prenume = document.getElementById('username').value;
+        var email = document.getElementById('email').value;
+        var mess1 = document.getElementById('phoneNumber').value;
+        var mess2 = document.getElementById('adress').value;
+        var body = '<b/> Mail de confirmare comandă' + ' <br/> Datele de comandă sunt: '  +'<br/>  Nume: ' + nume + '<br/>  Prenume: ' + prenume +  '<br/> Nr telefon: ' + mess1 + '<br/> Adresa: ' + mess2 
+
+        Email.send({
+    SecureToken : "5a1f29cf-bed5-46d3-8e79-4ce98935179a",
+    To : email,
+    From : 'oltyan.cristina07@gmail.com',
+    Subject : "Comandă",
+    Body : body
+}).then(
+  message => alert(message)
+);
+
+
+
+    })
+
+
+
+
+</script>
+</html>
